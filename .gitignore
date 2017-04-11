@@ -1,0 +1,14 @@
+obj/
+bin/
+
+# Visual Studio #
+#################
+*.user
+*.suo
+
+# Backups #
+###########
+*~
+*.orig
+*.swp
+*.bak

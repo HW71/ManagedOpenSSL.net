@@ -492,15 +492,17 @@ namespace OpenSSL.Crypto
 			Native.ExpectSuccess(Native.RSA_print(bio.Handle, ptr, 0));
 		}
 
-		// => efo
 		/// <summary>
 		/// Calls RSA_verify()
 		/// </summary>
-		/// <param name="bio"></param>
+		/// <param name="type of message digest algorithm"></param>
+		/// <param name="message digest"></param>
+		/// <param name="length of message digest"></param>
+		/// <param name="signature"></param>
+		/// <param name="length of signature"></param>
 		public int Verify(int type, byte[] hash, uint hashLength, byte[] pSignature, uint pSignatureLength)
 		{
 			int ret = Native.ExpectSuccess(Native.RSA_verify(type, hash, hashLength, pSignature, pSignatureLength, this.ptr));
-
 			return ret;
 		}
 

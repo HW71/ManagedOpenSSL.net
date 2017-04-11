@@ -65,10 +65,7 @@ In your .NET project, add a reference to the `ManagedOpenSsl.dll` assembly.
 
 ### Documentation
 
-Take a look at the low-level C API [documentation](https://www.openssl.org/docs).
-
-* [Install](INSTALL)
-* [Changes](CHANGES)
+Take a look at the low-level C API [documentation](https://www.openssl.org/docs). Additionally take a look at the [installation notes](INSTALL).
 
 ### License
 

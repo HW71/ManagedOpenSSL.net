@@ -1,16 +1,20 @@
-## OpenSSL.NET (openssl-net)
+## ManagedOpenSSL.NET for VS 2008
 
 ### Description
-
 A managed [OpenSSL](https://www.openssl.org/) wrapper written in C# for the 2.0 .NET Framework that exposes both the [Crypto API](https://www.openssl.org/docs/crypto/crypto.html) and the [SSL API](https://www.openssl.org/docs/ssl/ssl.html).
 
-This is a must for .NET developers that need crypto but don't want to use Microsoft's SSPI.
-
-This wrapper is based on version 1.0.2k of libeay32.dll and ssleay32.dll. The corresponding binaries have been taken from:
+This is a must for .NET developers that need crypto but don't want to use Microsoft's SSPI. The wrapper is based on version 1.0.2k of libeay32.dll and ssleay32.dll. The corresponding binaries have been taken from:
 
 https://indy.fulgan.com/SSL/openssl-1.0.2k-i386-win32.zip
 
 as suggested by [OpenSSL Wiki](https://wiki.openssl.org/index.php/Binaries).
+
+### Differences to [OpenSSL.net](https://github.com/openssl-net/openssl-net)
+The following differences compared to [OpenSSL.net](https://github.com/openssl-net/openssl-net) apply:
+ * backported solution & project files for Visual Studio 2008
+ * CLI project has been dropped
+ * no unit tests + drop of related packages
+ * add missing wrapper for `RSA_verify()` function
 
 ### Wrapper Example
 
@@ -68,15 +72,6 @@ In your .NET project, add a reference to the `ManagedOpenSsl.dll` assembly.
 Take a look at the low-level C API [documentation](https://www.openssl.org/docs). Additionally take a look at the [installation notes](INSTALL).
 
 ### License
-
-The OpenSSL libraries are distributed under the terms of the [OpenSSL License & SSLeay License](LICENSE); this library and related code are released under the BSD license, see [COPYING](COPYING) for more details.
-
-### Team
-
-This library is the product of many contributors, both directly, and indirectly, thanks to the great effort of the OpenSSL team. Thanks to all those that have contributed to this project - whether code, testing, support or anything else.
-
-**Maintainer:**
- * Adam Caudill <adam@adamcaudill.com>
- * Frank Laub (2006-2014)
-
-For security issues, please contact the maintainer directly prior to opening a public ticket. Security issues will receive prompt attention and be handled as quickly as possible.
+This repository contains two software components with dedicated licenses:
+ * The underlying, native OpenSSL libraries (only contained as binaries) are distributed under the terms of the [OpenSSL License & SSLeay License](https://www.openssl.org/source/license.html)
+ * The ManagedOpenSSL library and related code are released under the original OpenSSL.net license, which is a BSD license. For more details see [LICENSE](LICENSE)

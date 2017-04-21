@@ -1,3 +1,11 @@
+The "ManagedOpenSSL.net" project is based 99% on the OpenSSL.NET project:
+
+https://github.com/openssl-net/openssl-net
+
+For my personal work I just needed to make some minor changes as outlined in
+the [README](README) document. Hence I add the original license of the OpenSSL.NET
+project below:
+
 Copyright (c) 2009-2014 Frank Laub
 Copyright (c) 2015 openssl-net
 All rights reserved.

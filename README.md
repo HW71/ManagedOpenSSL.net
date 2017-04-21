@@ -3,11 +3,9 @@
 ### Description
 A managed [OpenSSL](https://www.openssl.org/) wrapper written in C# for the 2.0 .NET Framework that exposes both the [Crypto API](https://www.openssl.org/docs/crypto/crypto.html) and the [SSL API](https://www.openssl.org/docs/ssl/ssl.html).
 
-This is a must for .NET developers that need crypto but don't want to use Microsoft's SSPI. The wrapper is based on version 1.0.2k of libeay32.dll and ssleay32.dll. The corresponding binaries have been taken from:
+This is a must for .NET developers that need crypto but don't want to use Microsoft's SSPI. The wrapper is based on version 1.0.2k of `libeay32.dll`and `ssleay32.dll`. As suggested in the [OpenSSL Wiki](https://wiki.openssl.org/index.php/Binaries) the corresponding binaries have been taken from:
 
 https://indy.fulgan.com/SSL/openssl-1.0.2k-i386-win32.zip
-
-as suggested by [OpenSSL Wiki](https://wiki.openssl.org/index.php/Binaries).
 
 ### Differences to [OpenSSL.net](https://github.com/openssl-net/openssl-net)
 The following differences compared to [OpenSSL.net](https://github.com/openssl-net/openssl-net) apply:

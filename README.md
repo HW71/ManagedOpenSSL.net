@@ -67,6 +67,8 @@ Both libeay32.dll and ssleay32.dll are statically linked native C DLLs without e
 
 In your .NET project, add a reference to the `ManagedOpenSsl.dll` assembly.
 
+If you're having trouble with the native library being loaded under mono, try using MONO_LOG_LEVEL=debug when invoking mono.
+
 ### Documentation
 
 Take a look at the low-level C API [documentation](https://www.openssl.org/docs). Additionally take a look at the [installation notes](INSTALL).

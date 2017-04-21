@@ -63,7 +63,7 @@ public class DSA : IDisposable
 
 ### Installation
 
-Make sure you have `libeay32.dll` and `ssleay32.dll` in the current working directory of your application or in your `PATH`.
+Both libeay32.dll and ssleay32.dll are statically linked native C DLLs without external dependencies. Hence you just have to make sure both `libeay32.dll` and `ssleay32.dll` are either located in the current working directory of your application or accessible by the `PATH` environment variable.
 
 In your .NET project, add a reference to the `ManagedOpenSsl.dll` assembly.
 

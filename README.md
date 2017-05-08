@@ -1,11 +1,13 @@
-## ManagedOpenSSL.NET for VS 2008
+## ManagedOpenSSL.NET for VS 2008 & VS 2015
 
 ### Description
-A managed [OpenSSL](https://www.openssl.org/) wrapper written in C# for the 2.0 .NET Framework that exposes both the [Crypto API](https://www.openssl.org/docs/crypto/crypto.html) and the [SSL API](https://www.openssl.org/docs/ssl/ssl.html).
+A managed [OpenSSL](https://www.openssl.org/) wrapper written in C# targeting the .NET Framework 3.5. It exposes both the [Crypto API](https://www.openssl.org/docs/crypto/crypto.html) and the [SSL API](https://www.openssl.org/docs/ssl/ssl.html).
 
-This is a must for .NET developers that need crypto but don't want to use Microsoft's SSPI. The wrapper is based on version 1.0.2k of `libeay32.dll`and `ssleay32.dll`. The 32 Bit version of these DLLs are provided as 3PP in the `native` directory and have been taken from:
+This is a must for .NET developers that need crypto but don't want to use Microsoft's SSPI. The wrapper is based on version 1.0.2k of `libeay32.dll`and `ssleay32.dll`. Both the 32 Bit and 64 Bit versions of these DLLs are provided as 3PP in the `native` directory and have been taken from:
 
 https://indy.fulgan.com/SSL/openssl-1.0.2k-i386-win32.zip
+
+https://indy.fulgan.com/SSL/openssl-1.0.2k-x64_86-win64.zip
 
 as suggested in the [OpenSSL Wiki](https://wiki.openssl.org/index.php/Binaries).
 
@@ -63,7 +65,7 @@ public class DSA : IDisposable
 
 ### Installation
 
-Both libeay32.dll and ssleay32.dll are statically linked native C DLLs without external dependencies. Hence you just have to make sure both `libeay32.dll` and `ssleay32.dll` are either located in the current working directory of your application or accessible by the `PATH` environment variable.
+The binary package contains the ManagedOpenSsl.dll pre-compiled with VS 2015 and "Any CPU" platform. Both libeay32.dll and ssleay32.dll are statically linked native C DLLs without external dependencies. Hence you just have to make sure both `libeay32.dll` and `ssleay32.dll` are either located in the current working directory of your application or accessible by the `PATH` environment variable.
 
 In your .NET project, add a reference to the `ManagedOpenSsl.dll` assembly.
 

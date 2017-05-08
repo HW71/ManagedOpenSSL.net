@@ -73,7 +73,7 @@ If you're having trouble with the native library being loaded under mono, try us
 
 ### Documentation
 
-Take a look at the low-level C API [documentation](https://www.openssl.org/docs). Additionally take a look at the [installation notes](INSTALL).
+Take a look at the low-level C API [documentation](https://www.openssl.org/docs).
 
 ### License
 This repository contains two software components with dedicated licenses:

@@ -13,7 +13,8 @@ as suggested in the [OpenSSL Wiki](https://wiki.openssl.org/index.php/Binaries).
 
 ### Differences to [OpenSSL.net](https://github.com/openssl-net/openssl-net)
 The following differences compared to [OpenSSL.net](https://github.com/openssl-net/openssl-net) apply:
- * backported solution & project files for Visual Studio 2008
+ * backported project & solution files for Visual Studio 2008
+ * new project & solution files for Visual Studio 2015
  * CLI project has been dropped
  * no unit tests + drop of related packages
  * add missing wrapper for `RSA_verify()` function
